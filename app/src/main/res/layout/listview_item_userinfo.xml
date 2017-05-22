@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHeadStar"
+            android:layout_width="@dimen/img_head_width_listview_item"
+            android:layout_height="@dimen/img_head_width_listview_item"
+            android:src="@drawable/account_white" />
+
+        <TextView
+            android:id="@+id/txtNicknameStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgHeadStar"
+            android:text="小丸子" />
+
+        <GridLayout
+            android:id="@+id/layoutUserinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNicknameStar"
+            android:layout_toRightOf="@id/imgHeadStar"
+            android:columnCount="3"
+            android:orientation="vertical"
+            android:rowCount="2">
+
+            <TextView
+                android:id="@+id/txtStarsStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/txtFansStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/txtMaterialsStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="关注" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="粉丝" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:gravity="center"
+                android:text="上传" />
+        </GridLayout>
+
+        <ImageView
+            android:id="@+id/imgPartline"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@id/imgHeadStar"
+            android:background="@color/colorBackground" />
+
+        <Button
+            android:id="@+id/btnUnstar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPartline"
+            android:text="取消关注" />
+    </RelativeLayout>
+</LinearLayout>
