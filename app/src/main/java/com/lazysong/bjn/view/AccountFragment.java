@@ -195,6 +195,18 @@ public class AccountFragment extends Fragment implements AdapterView.OnItemClick
                 intent.setClass(getContext(), StarActivity.class);
                 startActivity(intent);
                 break;
+            case 2:
+                intent.setClass(getContext(), FansActivity.class);
+                startActivity(intent);
+                break;
+            case 3:
+                intent.setClass(getContext(), BuyinfoActivity.class);
+                startActivity(intent);
+                break;
+            case 5:
+                intent.setClass(getContext(), RewardActivity.class);
+                startActivity(intent);
+                break;
         }
     }
 

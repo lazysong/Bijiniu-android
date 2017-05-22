@@ -31,7 +31,10 @@
         <activity android:name=".view.CheckLoginActivity" />
         <activity android:name=".view.UserInfoActivity" />
         <activity android:name=".view.RepositoryActivity" />
-        <activity android:name=".view.StarActivity"></activity>
+        <activity android:name=".view.StarActivity" />
+        <activity android:name=".view.FansActivity" />
+        <activity android:name=".view.BuyinfoActivity" />
+        <activity android:name=".view.RewardActivity"></activity>
     </application>
 
 </manifest>
