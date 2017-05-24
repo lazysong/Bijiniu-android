@@ -70,6 +70,7 @@ public class AccountFragment extends Fragment implements AdapterView.OnItemClick
     private TextView txtNickname;
     private TextView txtEducation;
     private ListView listviewAccount;
+    private ListView listviewSetting;
     private LinearLayout layoutMaterials;
     private LinearLayout layoutViewNumber;
     private LinearLayout layoutDownlaodNumber;
@@ -155,6 +156,36 @@ public class AccountFragment extends Fragment implements AdapterView.OnItemClick
                 getContext().getResources().getStringArray(R.array.listview_account));
         listviewAccount.setAdapter(nameAdapter);
         listviewAccount.setOnItemClickListener(this);
+        listviewSetting = (ListView) view.findViewById(R.id.listview_setting);
+        listviewSetting.setAdapter(new ArrayAdapter<String>(
+                getContext(),
+                R.layout.listview_item,
+                R.id.tv_title_listview_item,
+                getContext().getResources().getStringArray(R.array.listview_setting)
+        ));
+        listviewSetting.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent();
+                intent.putExtra("userId", userId);
+                intent.putExtra("userKey", userKey);
+                switch(position) {
+                    case 0:
+                        intent.setClass(getContext(), ProfileEditActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.setClass(getContext(), FeedbackActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent.setClass(getContext(), AboutActivity.class);
+                        startActivity(intent);
+                        break;
+                }
+            }
+        });
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

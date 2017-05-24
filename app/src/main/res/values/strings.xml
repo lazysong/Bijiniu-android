@@ -13,6 +13,12 @@
         <item>我加入的课程</item>
         <item>平台奖励</item>
     </string-array>
+    <string-array name="listview_setting">
+        <item>编辑资料</item>
+        <item>帮助与反馈</item>
+        <item>关于我们</item>
+    </string-array>
+
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_user_manage">UserManageActivity</string>
     <string name="title_activity_login">Sign in</string>

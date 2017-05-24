@@ -32,6 +32,7 @@ public class UserManageActivity extends AppCompatActivity implements View.OnClic
     private Button btnLoginCheck;
     private Button btnToLogout;
     private Button btnToUserInfo;
+    private Button btnToEditProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,8 @@ public class UserManageActivity extends AppCompatActivity implements View.OnClic
         btnToLogout.setOnClickListener(this);
         btnToUserInfo = (Button) findViewById(R.id.btnToUserInfo);
         btnToUserInfo.setOnClickListener(this);
+        btnToEditProfile = (Button) findViewById(R.id.btnToEditProfile);
+        btnToEditProfile.setOnClickListener(this);
     }
 
     @Override
@@ -70,6 +73,10 @@ public class UserManageActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.btnToUserInfo:
                 intent.setClass(this, UserInfoActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnToEditProfile:
+                intent.setClass(this, ProfileEditActivity.class);
                 startActivity(intent);
                 break;
         }

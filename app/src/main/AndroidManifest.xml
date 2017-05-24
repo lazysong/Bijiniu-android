@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -34,7 +36,14 @@
         <activity android:name=".view.StarActivity" />
         <activity android:name=".view.FansActivity" />
         <activity android:name=".view.BuyinfoActivity" />
-        <activity android:name=".view.RewardActivity"></activity>
+        <activity android:name=".view.RewardActivity" />
+        <activity android:name=".view.AboutActivity" />
+        <activity android:name=".view.ProfileEditActivity" />
+        <activity android:name=".view.FeedbackActivity" />
+        <activity android:name="com.yongchun.library.view.ImageSelectorActivity" />
+        <activity android:name="com.yongchun.library.view.ImagePreviewActivity" />
+        <activity android:name="com.yongchun.library.view.ImageCropActivity" />
+        <activity android:name=".utils.TakePhotoActivity"></activity>
     </application>
 
 </manifest>

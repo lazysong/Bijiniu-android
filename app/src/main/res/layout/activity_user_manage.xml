@@ -37,4 +37,10 @@
         android:layout_height="wrap_content"
         android:text="读取用户信息"/>
 
+    <Button
+        android:id="@+id/btnToEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改用户信息"/>
+
 </LinearLayout>

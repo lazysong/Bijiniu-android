@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+//解决访问sd卡出错问题 http://blog.csdn.net/oncealong/article/details/51344844
+//apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 24
@@ -28,4 +30,16 @@ dependencies {
     compile files('libs/gson-2.7.jar')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    //optional
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //optional
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    //optional
+    //解决访问sd卡出错问题 http://blog.csdn.net/oncealong/article/details/51344844
+    //    compile "com.github.hotchemi:permissionsdispatcher:2.1.2"
+    //    apt "com.github.hotchemi:permissionsdispatcher-processor:2.1.2"
+
+    //照片选择库 https://github.com/crazycodeboy/TakePhoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
 }
